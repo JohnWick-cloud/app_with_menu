@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".spravochniki"
+    android:id="@+id/spravochniki_drawer_layout">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/violet"
+            app:titleTextColor="@color/white"
+            app:title="Справочники"
+
+
+            />
+
+        <TextView
+            android:id="@+id/nomenklatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Номенклатура"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/nomenklatura"
+            android:drawablePadding="8dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/tovari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Товары"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/tovari"
+            android:drawablePadding="8dp"
+            android:clickable="true"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/spravochniki_navigation_view"
+        android:background="@color/white"
+        app:itemTextColor="@color/black"
+        app:subheaderColor="@color/black"
+        app:headerLayout="@layout/header_layout"
+        app:itemTextAppearance="@style/newTextSize"
+        app:menu="@menu/go_to_main_menu"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
